@@ -5,10 +5,10 @@ CHIP = esp32
 SKETCH = main.ino
 
 BOARD_UUID = arm_front
-COMMON = ../common
+COMMON = ../../common
 #Setup all libs used !
 LIBS = $(ESP_LIBS)/EEPROM \
-		#$(COMMON)
+		$(COMMON)/MicReader \
 
 
 CPPFLAGS += -DCONFIG_CXX_EXCEPTIONS=1
