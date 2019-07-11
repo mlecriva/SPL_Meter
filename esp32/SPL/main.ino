@@ -1,4 +1,7 @@
 #include <Arduino.h>
+#include <MicReader.h>
+
+MicReader mic(15);
 
 void setup()
 {
@@ -7,5 +10,7 @@ void setup()
 
 void loop()
 {
-    Serial.println("Hello World!");
+    Serial.println("Hello Mic!");
+    Serial.println(mic.readAnalog());
+    delay(1000);
 }

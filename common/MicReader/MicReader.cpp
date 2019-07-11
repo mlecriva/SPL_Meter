@@ -21,6 +21,7 @@ float MicReader::readAnalog(void) const
 }
 float MicReader::readDB(void) const
 {
+    /* TODO: add correct conversion to obtain db */
     return analogRead(_pin);
 }
 void MicReader::setReadResolution(int resolution)
