@@ -22,7 +22,7 @@ float MicReader::readAnalog(void) const
 float MicReader::readDB(void) const
 {
     /* TODO: add correct conversion to obtain db */
-    return analogRead(_pin);
+    return (float)(analogRead(_pin) + 83.2073) / 14.003;
 }
 void MicReader::setReadResolution(int resolution)
 {
