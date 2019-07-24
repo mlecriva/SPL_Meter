@@ -1,3 +1,6 @@
+#ifndef __MICREADER_H__
+#define __MICREADER_H__
+
 #include <Arduino.h>
 #include <driver/adc.h>
 
@@ -35,3 +38,4 @@ private:
     int _div;
     adc_attenuation_t _attenuation;
 };
+#endif /* __MICREADER_H__ */
