@@ -1,0 +1,3 @@
+[submodule "common/ESP32_FTP"]
+	path = common/ESP32_FTP
+	url = https://github.com/mlecriva/ESP32_FTP.git
