@@ -10,7 +10,7 @@ void setup()
 {
     Serial.begin(115200);
 
-    cout << "Setting AP (Access Point)… ") << endl;
+    cout << "Setting AP (Access Point)… " << endl;
 
     if (!WiFi.softAPConfig(local_IP, gateway, subnet))
     {
