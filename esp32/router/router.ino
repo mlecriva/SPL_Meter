@@ -12,18 +12,6 @@ void setup()
 
     cout << "Setting AP (Access Point)… " << endl;
 
-    if (!WiFi.softAPConfig(local_IP, gateway, subnet))
-    {
-        cout << "STA Failed to configure" << endl;
-    }
-    else
-    {
-        cout << "Success to configure STA :" << endl;
-        cout << "Local IP address   : " << local_IP << endl;
-        cout << "Gateway IP address : " << gateway << endl;
-        cout << "Subnet IP address  : " << subnet << endl;
-    }
-
     WiFi.softAP(ssid, password);
 
     server.begin();
