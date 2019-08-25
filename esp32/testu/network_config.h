@@ -18,4 +18,8 @@ const IPAddress udpServer_IP = (192, 168, 1, 255);
 // UDP port
 const int udpPort = 44444;
 
+char *ftp_server = "...";
+char *ftp_username = "...";
+char *ftp_password = "...";
+
 #endif /* __NETWORK_CONFIG_H__ */
