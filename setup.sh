@@ -129,6 +129,9 @@ if [ -z "$ARDMK_DIR" ]; then # ifndef ARDMK_DIR
 
 		sudo apt-get install texlive-font-utils
 
+		sudo python3 -m pip install pyftpdlib
+
+
 
 		echo export ARDMK_DIR="/usr/share/arduino" >> "$PROFILE"
 	else
@@ -150,6 +153,9 @@ if [ -z "$ARDMK_DIR" ]; then # ifndef ARDMK_DIR
 		pip3 install pyserial
 
 		pip3 install python-igraph
+
+		sudo python3 -m pip install pyftpdlib
+
 	fi
 
 fi
