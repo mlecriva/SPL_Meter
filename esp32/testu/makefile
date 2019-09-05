@@ -7,7 +7,7 @@ SKETCH = ftp.ino
 COMMON = ../../common
 #Setup all libs used !
 LIBS =  $(ESP_LIBS)/EEPROM \
-		$(ESP_LIBS)/Wifi \
+		$(ESP_LIBS)/WiFi \
 		$(ESP_LIBS)/SPIFFS \
 		$(ESP_LIBS)/FS \
 		$(COMMON)/MicReader \
