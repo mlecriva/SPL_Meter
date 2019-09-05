@@ -2,7 +2,7 @@ BOARD = esp32
 CHIP = esp32
 
 #Arduino file
-SKETCH = spiffs.ino
+SKETCH = ftp.ino
 
 COMMON = ../../common
 #Setup all libs used !
@@ -12,8 +12,8 @@ LIBS =  $(ESP_LIBS)/EEPROM \
 		$(ESP_LIBS)/FS \
 		$(COMMON)/MicReader \
 		$(COMMON)/FileManager \
-		$(COMMON)/ESP32_FTP/FTPClient.cpp \
-		$(COMMON)/ESP32_FTP/FTPCommands.cpp \
+		$(COMMON)/ESP32_FTP/src/FTPClient.cpp \
+		$(COMMON)/ESP32_FTP/src/FTPCommands.cpp \
 
 
 CPPFLAGS += -DCONFIG_CXX_EXCEPTIONS=1
