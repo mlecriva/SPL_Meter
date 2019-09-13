@@ -160,6 +160,10 @@ if [ -z "$ARDMK_DIR" ]; then # ifndef ARDMK_DIR
 
 fi
 
+cd common/ESP32_FTP
+git submodule update --init --recursive
+cd ../../
+
 # A reboot is required to source the .profile file
 echo "My work here is done. Now it is time for me to retire."
 echo "Please reboot your computer to take the changes into account"
