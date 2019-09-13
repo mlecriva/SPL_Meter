@@ -3,8 +3,8 @@
 
 #include <WiFi.h>
 
-const char *ssid = "ESP32-Access-Point";
-const char *password = "123456789";
+const char *ssid = "...";
+const char *password = "...";
 
 // Static IP address
 const IPAddress local_IP(192, 168, 1, 2);
